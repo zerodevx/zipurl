@@ -1,0 +1,40 @@
+{
+  "name": "zipurl",
+  "description": "Easily create gzip shareable links",
+  "version": "0.1.0",
+  "author": "Jason Lee <jason@zerodevx.com>",
+  "main": "zipurl.min.js",
+  "module": "index.js",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "lint": "standard | snazzy",
+    "prepublishOnly": "npm run lint && npm run build",
+    "test": "npm run dev"
+  },
+  "dependencies": {
+    "js-base64": "^3.6.0",
+    "pako": "^2.0.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "rollup": "^2.44.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.3"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerodevx/zipurl.git"
+  },
+  "keywords": [
+    "gzip",
+    "base64",
+    "url-safe"
+  ]
+}
