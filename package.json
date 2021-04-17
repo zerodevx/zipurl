@@ -1,7 +1,7 @@
 {
   "name": "zipurl",
-  "description": "Easily create gzip shareable links",
-  "version": "0.1.0",
+  "description": "Generate gzip web-safe strings on the browser",
+  "version": "0.1.1",
   "author": "Jason Lee <jason@zerodevx.com>",
   "main": "zipurl.min.js",
   "module": "index.js",
@@ -28,6 +28,10 @@
     "standard": "^16.0.3"
   },
   "license": "ISC",
+  "files": [
+    "index.js",
+    "zipurl.min.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zerodevx/zipurl.git"
