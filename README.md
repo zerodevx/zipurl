@@ -36,7 +36,7 @@ $ npm install zipurl
 #### Or without installation via CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/zipurl@0/zipurl.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/zipurl@0"></script>
 ```
 
 The functions `zipurl()` and `unzipurl()` are available in the global (`window`) scope.
