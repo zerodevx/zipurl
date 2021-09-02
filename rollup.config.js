@@ -1,4 +1,3 @@
-import pkg from './package.json'
 import resolve from '@rollup/plugin-node-resolve'
 import { terser } from 'rollup-plugin-terser'
 import livereload from 'rollup-plugin-livereload'
@@ -7,11 +6,11 @@ import serve from 'rollup-plugin-serve'
 const production = !process.env.ROLLUP_WATCH
 
 export default {
-  input: pkg.exports.import,
+  input: 'index.js',
   output: {
     format: 'umd',
     name: 'window',
-    file: pkg.exports.require,
+    file: 'zipurl.min.js',
     extend: true
   },
   plugins: [
