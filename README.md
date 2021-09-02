@@ -20,7 +20,7 @@ See it in action [here](https://zerodevx.github.io/json-pretty-print/?data=H4sIA
 Install the node package with npm or yarn.
 
 ```
-$ npm install zipurl
+$ npm i -D zipurl
 ```
 
 ## Usage
@@ -49,8 +49,50 @@ import { zipurl, unzipurl } from 'zipurl'
 
 ### In Node.js
 
+#### With ESM
+
+```js
+import { zipurl, unzipurl } from 'zipurl'
+
+console.log(zipurl('Hello world!') // H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA
+console.log(unzipurl('H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA')) // Hello world!
+```
+
+#### With CJS
+
 ```js
 const { zipurl, unzipurl } = require('zipurl')
+
+console.log(zipurl('Hello world!') // H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA
+console.log(unzipurl('H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA')) // Hello world!
+```
+
+### Use the CLI
+
+Install globally:
+
+```
+$ npm i -g zipurl
+```
+
+Input arguments:
+
+```
+$ zipurl hello world!
+H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA
+
+$ unzipurl H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA
+hello world!
+```
+
+Pipe through `stdin`:
+
+```
+$ echo hello world! | zipurl
+H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA
+
+$ echo H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA | unzipurl
+hello world!
 ```
 
 ## Encoding/decoding
@@ -63,7 +105,7 @@ unzipurl('H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA') // hello world!
 
 That's it!
 
-Ok, it works much better with larger datasets.
+Ok, so it works much better with larger datasets:
 
 ```js
 const a = JSON.stringify(`{"students":[{"name":"Jack","age":17},{"name":"Jill","age":16},
