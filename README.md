@@ -54,7 +54,7 @@ import { zipurl, unzipurl } from 'zipurl'
 ```js
 import { zipurl, unzipurl } from 'zipurl'
 
-console.log(zipurl('Hello world!') // H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA
+console.log(zipurl('Hello world!')) // H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA
 console.log(unzipurl('H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA')) // Hello world!
 ```
 
@@ -63,7 +63,7 @@ console.log(unzipurl('H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA')) // Hello wo
 ```js
 const { zipurl, unzipurl } = require('zipurl')
 
-console.log(zipurl('Hello world!') // H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA
+console.log(zipurl('Hello world!')) // H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA
 console.log(unzipurl('H4sIAAAAAAAAA_NIzcnJVyjPL8pJUQQAlRmFGwwAAAA')) // Hello world!
 ```
 
