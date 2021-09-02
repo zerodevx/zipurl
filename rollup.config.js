@@ -7,11 +7,11 @@ import serve from 'rollup-plugin-serve'
 const production = !process.env.ROLLUP_WATCH
 
 export default {
-  input: pkg.module,
+  input: pkg.exports.import,
   output: {
     format: 'umd',
     name: 'window',
-    file: pkg.main,
+    file: pkg.exports.require,
     extend: true
   },
   plugins: [
