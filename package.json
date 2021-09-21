@@ -1,6 +1,6 @@
 {
   "name": "zipurl",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Generate gzip web-safe strings on the browser",
   "author": "Jason Lee <jason@zerodevx.com>",
   "type": "module",
@@ -23,7 +23,7 @@
     "test": "npm run dev"
   },
   "dependencies": {
-    "js-base64": "^3.6.1",
+    "js-base64": "^3.7.1",
     "pako": "^2.0.4"
   },
   "devDependencies": {
