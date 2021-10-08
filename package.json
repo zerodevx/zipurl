@@ -1,6 +1,6 @@
 {
   "name": "zipurl",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Generate gzip web-safe strings on the browser",
   "author": "Jason Lee <jason@zerodevx.com>",
   "type": "module",
@@ -23,20 +23,20 @@
     "test": "npm run dev"
   },
   "dependencies": {
-    "js-base64": "^3.7.1",
+    "js-base64": "^3.7.2",
     "pako": "^2.0.4"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-node-resolve": "^13.0.5",
     "ansi-regex": "^6.0.1",
     "chai": "^4.3.4",
-    "mocha": "^9.1.1",
-    "rollup": "^2.56.3",
+    "mocha": "^9.1.2",
+    "rollup": "^2.58.0",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-serve": "^1.1.0",
     "rollup-plugin-terser": "^7.0.2",
     "snazzy": "^9.0.0",
-    "standard": "^16.0.3"
+    "standard": "^16.0.4"
   },
   "license": "ISC",
   "engines": {
