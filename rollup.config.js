@@ -15,7 +15,7 @@ export default {
   },
   plugins: [
     resolve(),
-    !production && serve({ port: 5000 }),
+    !production && serve({ port: 8000 }),
     !production && livereload(),
     production && terser({
       module: true,
