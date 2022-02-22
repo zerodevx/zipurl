@@ -1,6 +1,6 @@
 {
   "name": "zipurl",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Generate gzip web-safe strings on the browser",
   "author": "Jason Lee <jason@zerodevx.com>",
   "type": "module",
@@ -49,10 +49,7 @@
     "zipurl.min.js"
   ],
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zerodevx/zipurl.git"
-  },
+  "repository": "github:zerodevx/zipurl",
   "keywords": [
     "gzip",
     "base64",
