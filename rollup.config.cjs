@@ -1,12 +1,12 @@
-import resolve from '@rollup/plugin-node-resolve'
-import { terser } from 'rollup-plugin-terser'
+const resolve = require('@rollup/plugin-node-resolve')
+const terser = require('@rollup/plugin-terser')
 
-export default {
-  input: 'src/index.js',
+module.exports = {
+  input: 'index.js',
   output: {
+    file: 'zipurl.min.js',
     format: 'umd',
     name: 'window',
-    file: 'zipurl.min.js',
     extend: true
   },
   plugins: [
