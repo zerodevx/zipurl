@@ -8,7 +8,7 @@ Dead simple mash-up of [pako](https://github.com/nodeca/pako) and
 URL-safe base64 strings from any data on the browser. Very useful for passing
 large datasets via shareable web links.
 
-45kb minified, 14kb **gzipped**, pun not intended.
+48kb minified, 15kb **gzipped**, pun not intended.
 
 ## Demo
 
@@ -34,7 +34,7 @@ $ npm i -D zipurl
 #### Use locally
 
 ```html
-<script src="zipurl.min.js"></script>
+<script src="path/to/zipurl.min.js"></script>
 ```
 
 #### Or without installation via CDN
@@ -163,17 +163,18 @@ natively (kindof).
 
 Here's the gist:
 
+<!-- prettier-ignore -->
 ```js
 function zipurl(data) {
-  var blob = Utilities.gzip(Utilities.newBlob(data))
-  return Utilities.base64EncodeWebSafe(blob.getBytes())
+  const { gzip, base64EncodeWebSafe, newBlob } = Utilities
+  const blob = gzip(newBlob(data)).getBytes()
+  return base64EncodeWebSafe(blob).replace(/=/g, '')
 }
 
 function unzipurl(data) {
-  var blob = Utilities.newBlob(
-    Utilities.base64DecodeWebSafe(data)
-  ).setContentType('application/x-gzip')
-  return Utilities.ungzip(blob).getDataAsString()
+  const { ungzip, base64DecodeWebSafe, newBlob } = Utilities
+  const blob = newBlob(base64DecodeWebSafe(data)).setContentType('application/x-gzip')
+  return ungzip(blob).getDataAsString()
 }
 ```
 
