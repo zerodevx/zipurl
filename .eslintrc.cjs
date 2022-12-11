@@ -8,5 +8,9 @@ module.exports = {
   env: {
     browser: true,
     node: true
+  },
+  rules: {
+    'no-tabs': 'error',
+    'no-unexpected-multiline': 'error'
   }
 }
