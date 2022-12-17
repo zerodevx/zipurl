@@ -1,6 +1,6 @@
 {
   "name": "zipurl",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "description": "Generate gzip web-safe strings on the browser",
   "author": "Jason Lee <jason@zerodevx.com>",
   "scripts": {
@@ -30,13 +30,13 @@
     "rollup": "3.7.5"
   },
   "type": "module",
-  "main": "./zipurl.min.js",
   "exports": {
     ".": {
       "import": "./index.js",
       "require": "./zipurl.min.js"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./zipurl.min.js": "./zipurl.min.js"
   },
   "bin": {
     "zipurl": "./bin/zipurl.js",
