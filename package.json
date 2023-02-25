@@ -1,6 +1,6 @@
 {
   "name": "zipurl",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "description": "Generate gzip web-safe strings on the browser",
   "author": "Jason Lee <jason@zerodevx.com>",
   "scripts": {
@@ -12,22 +12,22 @@
     "test": "npm run build && http-server . -c-1 -o test/"
   },
   "dependencies": {
-    "js-base64": "^3.7.3",
+    "js-base64": "^3.7.5",
     "pako": "^2.1.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "15.0.1",
-    "@rollup/plugin-terser": "0.2.0",
+    "@rollup/plugin-terser": "0.4.0",
     "ansi-regex": "6.0.1",
     "chai": "4.3.7",
-    "eslint": "8.30.0",
-    "eslint-config-prettier": "8.5.0",
+    "eslint": "8.34.0",
+    "eslint-config-prettier": "8.6.0",
     "gzip-size-cli": "5.1.0",
     "http-server": "14.1.1",
     "mocha": "10.2.0",
     "npm-run-all": "4.1.5",
-    "prettier": "2.8.1",
-    "rollup": "3.7.5"
+    "prettier": "2.8.4",
+    "rollup": "3.17.2"
   },
   "type": "module",
   "exports": {
