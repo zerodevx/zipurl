@@ -1,7 +1,7 @@
-const resolve = require('@rollup/plugin-node-resolve')
-const terser = require('@rollup/plugin-terser')
+import resolve from '@rollup/plugin-node-resolve'
+import terser from '@rollup/plugin-terser'
 
-module.exports = {
+export default {
   input: 'index.js',
   output: {
     file: 'zipurl.min.js',
