@@ -4,7 +4,7 @@ import terser from '@rollup/plugin-terser'
 export default {
   input: 'index.js',
   output: {
-    file: 'zipurl.min.js',
+    file: 'dist/index.umd.js',
     format: 'umd',
     name: 'window',
     extend: true
