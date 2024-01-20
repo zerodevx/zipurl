@@ -34,13 +34,13 @@ $ npm i -D zipurl
 #### Use locally
 
 ```html
-<script src="path/to/zipurl.min.js"></script>
+<script src="path/to/dist/index.umd.js"></script>
 ```
 
 #### Or without installation via CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/zipurl@0"></script>
+<script src="https://cdn.jsdelivr.net/npm/zipurl"></script>
 ```
 
 The functions `zipurl()` and `unzipurl()` are available in the global (`window`)
