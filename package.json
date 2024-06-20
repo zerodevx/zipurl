@@ -1,31 +1,28 @@
 {
   "name": "zipurl",
-  "version": "0.2.18",
+  "version": "1.0.0",
   "description": "Generate gzip web-safe strings on the browser",
   "author": "Jason Lee <jason@zerodevx.com>",
   "scripts": {
-    "format": "prettier --write --ignore-path .gitignore .",
-    "lint": "npm run format && eslint --ignore-path .gitignore .",
-    "build": "npm run lint && rollup -c && cp dist/index.umd.js dist/index.umd.cjs && npm run size",
-    "size": "gzip-size dist/index.umd.js --include-original",
-    "test": "npm run build && http-server . -c-1 -o test/"
+    "dev": "vite",
+    "build": "npm run lint && vite build && cp dist/index.umd.cjs dist/index.min.js && npx publint",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && eslint",
+    "test": "npm run build && playwright test"
   },
   "dependencies": {
     "js-base64": "^3.7.7",
     "pako": "^2.1.0"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "ansi-regex": "^6.0.1",
-    "chai": "^4.4.1",
-    "eslint": "^8.57.0",
+    "@eslint/js": "^9.5.0",
+    "@playwright/test": "^1.44.1",
+    "eslint": "^9.5.0",
     "eslint-config-prettier": "^9.1.0",
-    "gzip-size-cli": "^5.1.0",
-    "http-server": "^14.1.1",
-    "mocha": "^10.3.0",
-    "prettier": "^3.2.5",
-    "rollup": "^4.13.0"
+    "globals": "^15.6.0",
+    "prettier": "^3.3.2",
+    "terser": "^5.31.1",
+    "vite": "^5.3.1"
   },
   "type": "module",
   "exports": {
@@ -36,7 +33,7 @@
     "zipurl": "./bin/zipurl.js",
     "unzipurl": "./bin/unzipurl.js"
   },
-  "jsdelivr": "./dist/index.umd.js",
+  "jsdelivr": "./dist/index.min.js",
   "files": [
     "bin/",
     "dist/",
