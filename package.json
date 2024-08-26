@@ -1,11 +1,11 @@
 {
   "name": "zipurl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate gzip web-safe strings on the browser",
   "author": "Jason Lee <jason@zerodevx.com>",
   "scripts": {
     "dev": "vite",
-    "build": "npm run lint && vite build && cp dist/index.umd.cjs dist/index.min.js && npx publint",
+    "package": "npm run lint && vite build && cp dist/index.umd.cjs dist/index.min.js && npx publint",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint",
     "test": "npm run build && playwright test"
@@ -16,13 +16,13 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.5.0",
-    "@playwright/test": "^1.44.1",
-    "eslint": "^9.5.0",
+    "@playwright/test": "^1.46.1",
+    "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
-    "globals": "^15.6.0",
-    "prettier": "^3.3.2",
-    "terser": "^5.31.1",
-    "vite": "^5.3.1"
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "terser": "^5.31.6",
+    "vite": "^5.4.2"
   },
   "type": "module",
   "exports": {
