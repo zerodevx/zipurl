@@ -1,3 +1,5 @@
+![NPM Version](https://img.shields.io/npm/v/zipurl)
+
 # zipurl
 
 > Generate **gzip** web-safe strings on the browser. Built in 10 minutes. :smile:
