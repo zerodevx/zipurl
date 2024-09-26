@@ -2,8 +2,8 @@
 
 > Generate **gzip** web-safe strings on the browser. Built in 10 minutes. :smile:
 
-Dead simple mash-up of [pako](https://github.com/nodeca/pako) and
-[js-base64](https://github.com/dankogai/js-base64) to create **gzipped** URL-safe base64 strings
+Dead simple mash-up of [`pako`](https://github.com/nodeca/pako) and
+[`js-base64`](https://github.com/dankogai/js-base64) to create **gzipped** URL-safe base64 strings
 from any data on the browser. Very useful for passing large datasets via shareable web links.
 
 48kb minified, 15kb **gzipped**, pun not intended.
@@ -14,7 +14,7 @@ This package is used in [JSON Pretty Print Online](https://zerodevx.github.io/js
 compress and share stringified JSON with URL query params.
 
 See it in action
-[here](https://zerodevx.github.io/json-pretty-print/?data=H4sIAAAAAAAAA7WaXXOkNhaG7_MrtK692FQaAgIE8tU4tmfjxJ7MepykUklqS4Do1g4NHT5sd1L73_foC2g3bXs83krF0wLpICHpOe854tcvEPoL_kfo6N8iPzpGR8SLKWFBESakIJnvJYkfZn4YHS10NVHl_B4qeqa87E27mMShz1InS7PQCUmWOkkUJg4hHityFjCSpoON9iTrxC2Hdl3Tc3M1ZSWrMnnx6O94QXDiJtS22Iis6xt1b9V1m-Ovv96ULOOrusxd0X0d4PsA27psKesFoSnyLT-ty7qRbdOmvqtsvYqtlcHLuqkY-lDWbLi15DBK1aLga1Zyez2r1xtWbeWN9z9c31ycntg7UE2U8noprbXS2JtN3XQiYy60Gsaxqiv10K989A_qh1-i0KMOjnAy9D7PG962so4fxOikgr6d1n3TLdB5Kf5kt6Is-QK943foit-LrF4g6sX-0Dyt-042Pu9QLofNEavEGq3ZEgyxUvzRM9SKqkObphY5hx9rISuIHG1YIxi8ZsR7aIu4vMxysRGtyES1dNHJmnfTK6jol9ACQX85-qMXKOctb3qwCYXWRdd80_CVepeiQ1lfbpjtlO6PNCdtqkfVRQFWGRJNLyvUZQmN-rJk66xGonJ_a34bJqjhS9F2vOFq7WHPJ44XOV5w4yXHPj3GEXLgl-fZ-iXrRNfn8tXD2nSjIMTUt_fqamlvJp4bJ4TG5lbHlnImflUl9djJgIxtuZJkL8diBlPUr8eyHspYZvmkbr1e13k9qSxn40iVfje9KBoBj5x25C_zr9xL-bgZd5b1DUtFt2LobVlv8yNz_7-LAxb8GQuXNXSboZ9XouNPGsBzBmA_MzlN6BtYaCXfDlZ2xrdsOO9gOckm3_KyhCU92ZN_Q7_UPVqxW44o6quGsxytYcXBNm9dO78Fu61hSvjbphdq-bPNplSdVh2eR1zBo4BgwlOeQgGzh4izC8QizkvDIgtI4NACOBcmReSwNA6cOPPSPCe0oJjMIK5gZTvHuGARhoE77vwXMM728EnG_SSfCrMwh7iDgLs8ub748WqPcLfSVsoV4EpARr8-TLgQS8IRJ0jCYI5wfoROyhRMNyVH1zXLF-g7lvXrlC3Q-543XY2uFeN8j5A9xsEq4Wt0yyUoFNrEBkCRiVzkEkIKc2pvGvZM7ilkAXn0XkWcDexy0akGFSBM_7Fg4m03_r7nTQa7oxN1hUroUQNW9LMUzFr5EAtUF11sWrjP-o4PlXeYJ01b1KkK8Fg7Ii76FhghCW2rtKqfJ6aCQaodyrRnA9L1C6izjPGMQdt3dQuuN7cENxhCHV-D1xq4Di_WRVeaxPxev43JS9RG9ainboFNh6aA5qJzeW3wKvKP5L4Z2s7QwWPBlc56ANMX3QRek5rup5yBjx0fnEF8HITHHj3sDLAbhDSi0YwrcGjgejQmyQFfYKZnJLd-d2OZT1yCkPM_FqfAlwN7WPEV8P9dvUXfsqaB-ejq6kX8Py2ZgNl4z16I_7clX8vl8DPQonk2-kdUTcjve6-Lfs7jnLEgoRxHOY3zh-jHD9CfxHHggx52siLznBBj7qSpzx3ix3maFoz7RTSD_gPqNlh41Aeh8Rnktyt2h_xlzx-C_7K-480WFOR6I5fBs-F_8uHmx-uLOXkr7WXa3JsNePceCHPQASTY_xJFIHEDL_JnHAAFpXYjN73VuBfNnai0vP2ONy3fSnk78R0W_WdWaXI2CMtR0g4_JDB2RJtSphaV2n8YzoDolQ4D8D-9mdVVy0EzG49hoAY4kyXlYCymDQZNSd2yWlc_QNfOB8hNa3LLOQNKC8TKYNr6hH23I_2Tobpm6-BfFCsrwQC-H_SjJ4S2nYYLgx3bUrmpdgQ89FldUiN00Q8G7GZ0le0JB2g_ymXsSZHu-zdedIzxsRce5nLsuzQMYOLnwIxBNWGPEhvhPSTzjpyWccZYtK9qKsBhgrOOwzqe53M1bBt1Q475NfgMU7IsOWwidNJUsNFfptA5y1boJ3DJsNhfJtG3FVg47asK-rNi609Q6FOwvBDVKavgvydYndNIanXOCpLk_kRiG1bbNWJZzTgpYo9wJwhi4oR5gh1Ki8AJ0zyJIi-Nw5g9n9X-AnuRi-PPYLVNlTzFanC03RZ90zdV-wmJiIuz83_-sMfpjbSVSlNvgITL-rBEpxEQmmAHe8lcEiKKI9ARVVZnH9GHTq6DBToBf55zbjj9S918BEr7sbdH6fdWfhoEap6YQj7iTYX8LrrUGBmyCBZMokJKF5m_Wb8ROQMIDhoTFptRrmq_gzTOd6kG__Y2K3Ey4aCinGnaihHC77SS7wY6g_o1zHxcelLHi-FV3vge8O0Ye4_kIRLiEprQmM4xLqIuhVkZIrzHGCcmgJo6iMnVflI7n7_-emg7XTFwjqesuZ3Ivk_B2tlWpwz-w0A_vghrsIk-gohs6vpj-2ykTfbfhGfk-TiDxczuYG8026fkZx4QkgVB5McBjTLvIdKsZ7NIi_OcFTEBmhVJ7IQsBqRhQh1KAhrmBQ2jmM4g7VDmAS9I7LkR_gymzWUe5Cvdyzx8zyoOEQD_OMO0A0Q7PX93c3F6vse0j2DqTlp6I92dyPhhqCnZSX0nID6egRoJMTrjrAEyVFZ5vq2bFDRTfQdYu8jZChZEGCT7TLtQ6UmtrLQGmgDJoMTKNw2cn7jRl1Iq6WwrsM-G3GPj27rsN_CDm0oD_vJB0I7ReGtCYmAjSOAhR6AAOQAUwGWQqTWttquzB1cqA6sAqFSgzojcZ3zTcSC2MFQeGGvlniKjRrghttSlbEw16HzMTq6lm-ho5QNA5trEwaTimB9RUvdx0kaOFzqY3vj4GFNA7GHShoEbxoBmm9WdgjbGrhdiEhzK-A4v5HB690H2Vw1_UttO73jJvqkJh18p53tW98uStehdzcsXkRdIuGTomlUw25vVi9D7PetWEGnBrr8W9fPhO3Jiwt74_8DePMQsioqEp4SlBU0estdG1pa92M95SnHm5HmKndBjvkOTkDhZ5kUkIrGfRMknsDdY-J7vks-J_e1afTLrC7qNb9HNtv2EyP-DpO_1xekefVfSWCdtvWklfxuRHQ77Y6JFZYDJXNgfxRid33N5MmA15RWgGFZEC5gDgdmIP-uKAYETuk_gd4BR_jCuN0DWzFKBsEkcmhvmwEmp0DHks1G7Cm8VBe8tGXdCbQtrI111K3niZZTrqblvQ2jrAAx3p0-0fJOtpU9QpqCpOgiz-tME7FONrLunUt0TAavHO4bx3OQt1IhsrwfHMnaUj8lg1RObPDZ-RBkc_ZH1ATtZ7Snx1SuejPJJkUwdn954-Djwj8PgMLoD7EaeH8-R2_djF9MEk4PoBof2QN6ORf2yDp_RmYk8TH3evcohHaASnDUAu4E18SJkX7GmXTEQr6B4n5bbB47pGLoCmjw_STshy8uk8rMi_5CEJA-LkKZREsZR_BDV5AGqk8IjGfaIk7I0csKQZk6SF7nDQ5_JbxNAAhSf8g2Ch-URwGufz81E_ld1nW_Rt7AG6zu2fTarv7m4vLw6P9tD9VqaWxlrb1JYuWueH4a1FwOsYwhb49kMQBhRdAIDL8XwJQLEdk1rv0Som24lr9SlkMjGkZfsIft89lBKa1NNQHsQpTlkdLQBiwrCh7wmEPpMJnEBniqZO3wioK1Jcg0ZBiVZx28IND-1cYCspJmpOmaMBwW8k6zY8QZa4Q6nfhrQoPMHXu50eDjPm6pbVWN3lOOTBwob9GvB_mHyTCmpDe8HjCs4a3-gHjWcH1q7LrrRD5RxiIS-DgdsvSFq2HWsrRgSMS76F7QaPxNR8Yd6oA4j1ERq_zPrPc3nJ5NBPO4nYgf2sgd-wj_2yXH0SL7YiWOZE_Y8GzlPPUUkz1rCgNpDnX2N_wjmJxmS_eSx9Nljyayz8YJe06_hJ74XDbyZCp3DYqy7p1O9c47iWiyXLegtVj3nQHDOUZyuOIhaBqDqW_5sX7ELt4m7iF7kLr74_X8qHdwptSYAAA)!
+[here](https://zerodevx.github.io/json-pretty-print/H4sIAAAAAAAAA6WZa3OkNhaG_4q2Kx82tQ0RAgTyp3E8no2T8WTW4ySVSlJbAkS3dmjocLHdSeW_79EFEAm245pylbsbJKHb--g9h59-3_xXFpuzDcUJozwso5SWNA9wmgZRHkTxZruRdSEeNmd4u9kNpmxCkyjgmZdneeRFNM-8NI5Sj1LMy4KHnGaZqted5728E5uzvh3EdpPxitc5_Nx8RraUpH7KoNRR5v3Qqqv7vj-effHFseK52DdV4cv-i5A8hARK8R2UCKPtRpzERVM1LZTP2ua-hns1P6jqb5u25uhD1XB1cSeg16pUKQ68EnAlbw5HXp_g0vtvb26vLs7hGtyTFVypVN1OVX11bNpe5tyH4qp3-6ZWjf8rQP9kQfQ5ijDzSExS1aeiaEXXwd0gTNB5DU-_aIa236LLSv7G72RViS16J-7RtXiQebNFDCeBqpg1Qw_VLntUqLEIxGt5QAe-gyZ4JX8dOOpk3aNj28hCwJeDVAVkgY68lRzmC4kB6iKhLvNCHmUnc1nvfHR-EL17BZXDDmog6KhAvw4SFaIT7QBtwo_ORzfi2Iq9nizZo3yojnzslOmPak61qR_VlCW0ypFsB1WgqSqoNFQVP-QNkrX_c_uzmvxW7GTXi1ao3UJwQD0cezi8xelZwM5IjDz4hjGUrHgv-6GAKYZ95MdhRFgAV5t6Zy-n2E9SypLtpuc7mOufoHGnx2r51fPV-sJ8D2rNTLf0ApllPzRFo66rSdz8st2UrYTqqrHfN2pD42kP3fJM9nuO3lTNqdj8sTX3A2ePQcsc_bCXvZhuk_k27G-uBo6-hFWrxGnzBzxu1wrRw1JAga9EVcE-cLbqP9CPzYD2_E4ghoa6FbxAB1gs2PCdD50u-V0D4xRv2kGqPcOPx8o8eqnbUsQhJVRkIoMfhM-6DSbd4iwq85CGHitBvFFaxh7PktBLcpwVBWUlI3Sh25JX3VK44TaKQl9v_5cIN3hKuN-rxmHGlrpdUe3b85ur764d2d6pmpnQqq1AGcNhTbYRUbKlXphG4VK2QYzOqwxaayuBbhpebNHXPB8OGd-i94No-wbdaOEGmFJHuLB-4oDuhNr9Wq_yCLs_l4UslLK0dvW2tIJy7mkdgpzMbkWCT4L00YVRH-jS_BvVJrp-_v4g2hz2YC-bGlXQoRZaMc_SCu3UQ0ZK-Ojq2MF9PvRiKrwQsmp61K8uAI8dRyTk0IF0FHbGIp3u57ktYDkxDsXt2cQpMwFNnnORc6j7rungNChGLFl1ol4cALwTrGBifXRt8CIezGw4k2gaNaN2WcfdoWm5--hSXZtQqf4pmNmhLYYOGIYr_Yg12xdTBaZJL_fjhAuIFwDhEjilzjBbIxzxw4jFLF7wzWOhj1lC0xlwdv6hrpkVteG1ntVawqeGmerWdO1Jpn3dnNBXvG1hgvqmXoHaRcUlDP49X2Xam0oc1Nz-AEJrH-HZrGAHZwH-FJ4JkRSchykTJC5YUsw8IxPP0iQJA3ArXl7m2IsIEV6WBcKjQVJkWclFUMZP-5Bwi1kAB8wLcRYvcVYNwrUh96I9gRM4HNV0P0m08w-3391cLY2Iqp2byq-OcJgMIKQVqqUk-BzFYEZCHAcLqjE4X2_Vfh7dyFV7L2tjRL4WbSdOyogYFFqevR49geCTBZjNx_RFqWBx-moPMerfQNGKB-yJoiAwzb2ZN3UnwN1YDFqlgkbVL03NkT1W2_aXvjW6EvMAU7qYlOuWFKN4rfpHldeWPSPo_spSBV2LKgOMCZoaALXkQJQP5tEOdsZOw4WpnbGmZm83Uwv6rC_pEfroW0srO7p67IkAEj0CG4KVnQqCWxyfEXKGozXYJIHPohCWeUkbAoc3wYxGM26MN1JeDz7H0et9CouV9wJ24AidWm9o09WnoQNztKsE7GF03tagoTUvJXi-R98D1mFvrZmpUw33L4a6hrb2_PCol3L19mL-ZLyGvxUAFSxWrkrwkqZFYIyRAVA4AYgLWiaYCi8ME-pFRUo8xsrQi7IijWOcJVHCnwZQsCU49knyQgDhJwAEHO9P6Muhrbtn4qCr15f__taBz1HVzFTFVyD4XbNmplgM2KHEIxAhLrATJzEcM3Xe5B_Rh14t0xadw5FRCGHh82PTfgT0BAl20PN-NApW10Yk9kcxa1ZHHD56a7QxBTGj2mSN9FFo_-fDURYclD25AdgG1mPorQ4mplhKFT6HMSg6d8StpWurdnImyzvjufoJOeBTLAgeMwnMwwlM3G2AQbRnBK-GQSn1KUtZwpbCjZnPYN6Vk14IV6oHuSBTPwd1oxi__R29Xuw5IPiCt3fqkP-LVl-fTEzzPw5eYEWrsNs-ggFom-Zj94hOnW3piJT-HY3CDuD3sJXa05pRKEJK8zCMgyRkcY5nnUaTTpOi4GVCQaJlmngRT0CnhDKP0ZBFRcmiOGHPBD5kSxPsx-STAh81K07g8w2vBfgq8XEh1L_I9OLy3e3VxaUj1I9Q8V7Ve6XYKXOxplRtEFjghTQgC6XSiKDXgrew6evRI7xp2gzOOIjLwC8UfA8LFoWpK9QrHfKbM9CcVo7KrD7Gg9ao6HthnYA61EwGAwQ9Ov658l1TDUf4ImyhSdPFZD3mYKCzjhwED2ZlClG06icqgBotB4z7MO2a4OVaZzW0qvV5bQKyh1wcewEYkhY1EzjGg1nL3XDJYkg5CD5HOiYcXIR6veN4NNjAkIxxi1NwDs-0KXkMH7GHI4-w24CcEQbcWMMHBOdRAqRJFvRIiI8jQkMnizKN2M2cjKkUPRR1Y1wjtbfsONU2fDaP8roZdhXvINoT1QpOAAk7jm54DZN73K_w5Bve78FggjxuZPMYUWb5OEBJPhkoRUR4HJepyCjPSpbOQIknoJCgEBkjuVcUGfEizAOPpRH18hzHNKZJkMbps5mUAAc-fWnokTyVSYHzV5zQ7al7JvD4oJByc3XhIGWvqvaq5qtOQaWV-VrUkVBz_IeELqOOOCHo8kGo3Nd4-l8DX2DBOlAwWIFW_tbUHLCSMhcr74AN4s9hhaWMEaL24TYYtzdsZlL7hdmljkGDdtda2g-j3BdOfySQNRmmlkqNWo9xYe-PDn6kmoWJ-8RRtKq2Ap1uCqrqjOnoFGy84LoZ0z2dPnKshhnvHEUIGzbpEY29nmg5d1TMCRbdkzEhY-GoG5whO4JtkSlyMaan2BnlE3aGeQG7xQTOOSDPGo9C4sc4SJY4CoLEJywl1OURYHj0KroFNX43mWtXw8WV6J_J5gJD4EgACrWwSCscuuZtt-dgTcC9tOv5XI6uQW-PJT4cwb3U1DwaeEQ0okVURiyL0yiJk5k_dM58lJjmBFMv41nsRRHLvbQoC09EAVdvZuAAKJ97A4OJyjx9WiJ3EXhcN01xQl_BgjX3_PQkgL68evv2-vK1w5-Dqry3dV9lsMQHUawRCCdAoAR8dPKnACSKGTqHcVRyeg8DfrbtxvcwTdvv1ZWmkopDJMap-y5mNXtpXISR9ZixNOKyjseqRccAU64AsPNaJUaACDpBMr0gMa0pOU4BjjYX8xsUAwXTOJBDSdQWnbMwk1dZxEoLxBkvMqWHDXXAkU0QWHR4Svy6PkSXWI5yfvKEFsszY60-OM9U5sdCbGKTJo6BnH7UlGge2_XRrXmgcoyKZMa4jeUmf7c8LTo5xYE--g_Uml-SaaeoH2gMn15IA9XVI8G-fHMG8Rj8Eg_UhwF-wVlAz-LVHIyXJCrbgnG0wF-sMo5RyIjrxhZcG5aZGHWawIfdJYoleis-Db9vZAv9rdEl7I6m71fodyN3uw5Oa167eWHixIQCTAsHRQ_A5nUALjXvMDB-CQN_-T_JtmU7hx4AAA/).
 
 ## Install
 
@@ -26,10 +26,10 @@ $ npm i -D zipurl
 
 ### In the browser
 
-#### Use locally
+#### Via CDN
 
 ```html
-<script src="path/to/dist/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/zipurl@1"></script>
 <script>
   console.log(zipurl('hello world!')) // H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA
   console.log(unzipurl('H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA')) // hello world!
@@ -38,10 +38,10 @@ $ npm i -D zipurl
 
 The functions `zipurl()` and `unzipurl()` are available in the global (`window`) scope.
 
-#### Or without installation via CDN
+### Or locally
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/zipurl@1"></script>
+<script src="path/to/dist/index.min.js"></script>
 ```
 
 #### Or with a bundler
@@ -52,7 +52,7 @@ import { zipurl, unzipurl } from 'zipurl'
 
 ### In Node.js
 
-#### With ESM
+#### ESM
 
 ```js
 import { zipurl, unzipurl } from 'zipurl'
@@ -61,7 +61,7 @@ console.log(zipurl('hello world!')) // H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAA
 console.log(unzipurl('H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA')) // hello world!
 ```
 
-#### With CJS
+#### CJS
 
 ```js
 const { zipurl, unzipurl } = require('zipurl')
@@ -107,17 +107,16 @@ That's it!
 
 Ok, so it works much better with larger datasets:
 
+<!-- prettier-ignore -->
 ```js
-const a = JSON.stringify(`{"students":[{"name":"Jack","age":17},{"name":"Jill","age":16},
-{"name":"Sue","age":16}],"class":"math"}`)
+const a = JSON.stringify({"students":[{"name":"Jack","age":17},{"name":"Jill","age":16},{"name":"Sue","age":16}],"class":"math"})
 
 console.log(a.length) // 103 bytes
 console.log(encodeURIComponent(a).length) // 199 bytes
 console.log(zipurl(a).length) // 116 bytes
 
 // Let's try something bigger (3122 bytes)
-const b =
-  JSON.stringify(`{"shaderStatements":[{"output":"b","outputSwizzle":"zxyw","assignmentOperator":"-=",
+const b = JSON.stringify({"shaderStatements":[{"output":"b","outputSwizzle":"zxyw","assignmentOperator":"-=",
 "functionName":"","parameter":"a","valueX":6.62,"valueY":6.165,"valueZ":-0.974,"valueW":-4.233,"parameterSwizzle":"xzyy"},
 {"output":"b","outputSwizzle":"ywxz","assignmentOperator":"-=","functionName":"","parameter":"a","valueX":-4.88,
 "valueY":0.649,"valueZ":0.171,"valueW":-0.084,"parameterSwizzle":"yzwx"},{"output":"a","outputSwizzle":"xzwy",
@@ -144,8 +143,9 @@ const b =
 "randSeedString":"1574121532870","iterationCount":1,"gridPosX":4,"gridPosY":0,"generation":17,"subGeneration":1,
 "hueOffset":0.218,"hueScale":-0.789,"saturationScale":0.493,"uvOffsetX":-0.36,"uvOffsetY":0.559,"uvScaleX":1.02,
 "uvScaleY":-1.143,"rotate":0,"usePalette":0,"paletteColors":[{"x":0.041,"y":0.01,"z":0.584},{"x":0.131,"y":0.102,
-"z":0.658},{"x":0.9,"y":0.855,"z":0.917},{"x":0.797,"y":0.882,"z":0.478}],"saveListIndex":-1,"uniqueID":361315861}`)
+"z":0.658},{"x":0.9,"y":0.855,"z":0.917},{"x":0.797,"y":0.882,"z":0.478}],"saveListIndex":-1,"uniqueID":361315861})
 
+console.log(b.length) // 3122 bytes
 console.log(encodeURIComponent(b).length) // 4952 bytes
 console.log(zipurl(b).length) // 1120 bytes - 77.4% reduction in size :)
 ```
