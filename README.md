@@ -38,7 +38,7 @@ $ npm i -D zipurl
 
 The functions `zipurl()` and `unzipurl()` are available in the global (`window`) scope.
 
-### Or locally
+#### Or locally
 
 ```html
 <script src="path/to/dist/index.min.js"></script>
