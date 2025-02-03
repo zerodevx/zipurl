@@ -1,6 +1,6 @@
 {
   "name": "zipurl",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate gzip web-safe strings on the browser",
   "author": "Jason Lee <jason@zerodevx.com>",
   "scripts": {
@@ -16,13 +16,13 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.5.0",
-    "@playwright/test": "^1.47.2",
-    "eslint": "^9.11.1",
-    "eslint-config-prettier": "^9.1.0",
-    "globals": "^15.9.0",
-    "prettier": "^3.3.3",
-    "terser": "^5.33.0",
-    "vite": "^5.4.8"
+    "@playwright/test": "^1.50.1",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "terser": "^5.37.0",
+    "vite": "^6.0.11"
   },
   "type": "module",
   "exports": {
