@@ -1,22 +1,16 @@
 import js from '@eslint/js'
+import { defineConfig } from 'eslint/config'
 import globals from 'globals'
-import prettier from 'eslint-config-prettier'
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
-  { ignores: ['dist', 'temp'] },
-  js.configs.recommended,
-  prettier,
+export default defineConfig([
   {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node
-      }
-    },
-    rules: {
-      'no-tabs': 'error',
-      'no-unexpected-multiline': 'error'
-    }
+    files: ['**/*.{js,mjs,cjs}'],
+    plugins: { js },
+    extends: ['js/recommended'],
+    languageOptions: { globals: { ...globals.node, ...globals.browser } },
+    rules: { 'no-unexpected-multiline': 'error' }
+  },
+  {
+    ignores: ['dist', 'temp']
   }
-]
+])
