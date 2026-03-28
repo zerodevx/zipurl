@@ -2,18 +2,23 @@
 
 # zipurl
 
-> Generate **gzip** web-safe strings on the browser. Built in 10 minutes. :smile:
+> Generate gzipped url-safe strings on the browser or nodejs
 
-Dead simple mash-up of [`pako`](https://github.com/nodeca/pako) and
-[`js-base64`](https://github.com/dankogai/js-base64) to create **gzipped** URL-safe base64 strings
-from any data on the browser. Very useful for passing large datasets via shareable web links.
+Encode/decode long strings into compressed gzipped lossless url-safe representations. Very useful
+for sharing large datasets, like JSON, via URLs. [Code](https://cdn.jsdelivr.net/npm/zipurl@2) is
+only **≈1kB**. Featuring:
 
-48kb minified, 15kb **gzipped**, pun not intended.
+- [x] Lightning-fast, feather-light, zero dependencies (unless needed)
+- [x] Native-first, uses web standards for modern browsers
+- [x] Feature-detects, falling back to [pako](https://github.com/nodeca/pako) and
+      [js-base64](https://github.com/dankogai/js-base64) for older ones
+- [x] Universal, works on both browser and nodejs
+- [x] Battle-tested in real world; test suite included.
 
 ## Demo
 
 This package is used in [JSON Pretty Print Online](https://zerodevx.github.io/json-pretty-print/) to
-compress and share stringified JSON with URL query params.
+compress and share JSON via URLs.
 
 See it in action
 [here](https://zerodevx.github.io/json-pretty-print/H4sIAAAAAAAAA6WZa3OkNhaG_4q2Kx82tQ0RAgTyp3E8no2T8WTW4ySVSlJbAkS3dmjocLHdSeW_79EFEAm245pylbsbJKHb--g9h59-3_xXFpuzDcUJozwso5SWNA9wmgZRHkTxZruRdSEeNmd4u9kNpmxCkyjgmZdneeRFNM-8NI5Sj1LMy4KHnGaZqted5728E5uzvh3EdpPxitc5_Nx8RraUpH7KoNRR5v3Qqqv7vj-effHFseK52DdV4cv-i5A8hARK8R2UCKPtRpzERVM1LZTP2ua-hns1P6jqb5u25uhD1XB1cSeg16pUKQ68EnAlbw5HXp_g0vtvb26vLs7hGtyTFVypVN1OVX11bNpe5tyH4qp3-6ZWjf8rQP9kQfQ5ijDzSExS1aeiaEXXwd0gTNB5DU-_aIa236LLSv7G72RViS16J-7RtXiQebNFDCeBqpg1Qw_VLntUqLEIxGt5QAe-gyZ4JX8dOOpk3aNj28hCwJeDVAVkgY68lRzmC4kB6iKhLvNCHmUnc1nvfHR-EL17BZXDDmog6KhAvw4SFaIT7QBtwo_ORzfi2Iq9nizZo3yojnzslOmPak61qR_VlCW0ypFsB1WgqSqoNFQVP-QNkrX_c_uzmvxW7GTXi1ao3UJwQD0cezi8xelZwM5IjDz4hjGUrHgv-6GAKYZ95MdhRFgAV5t6Zy-n2E9SypLtpuc7mOufoHGnx2r51fPV-sJ8D2rNTLf0ApllPzRFo66rSdz8st2UrYTqqrHfN2pD42kP3fJM9nuO3lTNqdj8sTX3A2ePQcsc_bCXvZhuk_k27G-uBo6-hFWrxGnzBzxu1wrRw1JAga9EVcE-cLbqP9CPzYD2_E4ghoa6FbxAB1gs2PCdD50u-V0D4xRv2kGqPcOPx8o8eqnbUsQhJVRkIoMfhM-6DSbd4iwq85CGHitBvFFaxh7PktBLcpwVBWUlI3Sh25JX3VK44TaKQl9v_5cIN3hKuN-rxmHGlrpdUe3b85ur764d2d6pmpnQqq1AGcNhTbYRUbKlXphG4VK2QYzOqwxaayuBbhpebNHXPB8OGd-i94No-wbdaOEGmFJHuLB-4oDuhNr9Wq_yCLs_l4UslLK0dvW2tIJy7mkdgpzMbkWCT4L00YVRH-jS_BvVJrp-_v4g2hz2YC-bGlXQoRZaMc_SCu3UQ0ZK-Ojq2MF9PvRiKrwQsmp61K8uAI8dRyTk0IF0FHbGIp3u57ktYDkxDsXt2cQpMwFNnnORc6j7rungNChGLFl1ol4cALwTrGBifXRt8CIezGw4k2gaNaN2WcfdoWm5--hSXZtQqf4pmNmhLYYOGIYr_Yg12xdTBaZJL_fjhAuIFwDhEjilzjBbIxzxw4jFLF7wzWOhj1lC0xlwdv6hrpkVteG1ntVawqeGmerWdO1Jpn3dnNBXvG1hgvqmXoHaRcUlDP49X2Xam0oc1Nz-AEJrH-HZrGAHZwH-FJ4JkRSchykTJC5YUsw8IxPP0iQJA3ArXl7m2IsIEV6WBcKjQVJkWclFUMZP-5Bwi1kAB8wLcRYvcVYNwrUh96I9gRM4HNV0P0m08w-3391cLY2Iqp2byq-OcJgMIKQVqqUk-BzFYEZCHAcLqjE4X2_Vfh7dyFV7L2tjRL4WbSdOyogYFFqevR49geCTBZjNx_RFqWBx-moPMerfQNGKB-yJoiAwzb2ZN3UnwN1YDFqlgkbVL03NkT1W2_aXvjW6EvMAU7qYlOuWFKN4rfpHldeWPSPo_spSBV2LKgOMCZoaALXkQJQP5tEOdsZOw4WpnbGmZm83Uwv6rC_pEfroW0srO7p67IkAEj0CG4KVnQqCWxyfEXKGozXYJIHPohCWeUkbAoc3wYxGM26MN1JeDz7H0et9CouV9wJ24AidWm9o09WnoQNztKsE7GF03tagoTUvJXi-R98D1mFvrZmpUw33L4a6hrb2_PCol3L19mL-ZLyGvxUAFSxWrkrwkqZFYIyRAVA4AYgLWiaYCi8ME-pFRUo8xsrQi7IijWOcJVHCnwZQsCU49knyQgDhJwAEHO9P6Muhrbtn4qCr15f__taBz1HVzFTFVyD4XbNmplgM2KHEIxAhLrATJzEcM3Xe5B_Rh14t0xadw5FRCGHh82PTfgT0BAl20PN-NApW10Yk9kcxa1ZHHD56a7QxBTGj2mSN9FFo_-fDURYclD25AdgG1mPorQ4mplhKFT6HMSg6d8StpWurdnImyzvjufoJOeBTLAgeMwnMwwlM3G2AQbRnBK-GQSn1KUtZwpbCjZnPYN6Vk14IV6oHuSBTPwd1oxi__R29Xuw5IPiCt3fqkP-LVl-fTEzzPw5eYEWrsNs-ggFom-Zj94hOnW3piJT-HY3CDuD3sJXa05pRKEJK8zCMgyRkcY5nnUaTTpOi4GVCQaJlmngRT0CnhDKP0ZBFRcmiOGHPBD5kSxPsx-STAh81K07g8w2vBfgq8XEh1L_I9OLy3e3VxaUj1I9Q8V7Ve6XYKXOxplRtEFjghTQgC6XSiKDXgrew6evRI7xp2gzOOIjLwC8UfA8LFoWpK9QrHfKbM9CcVo7KrD7Gg9ao6HthnYA61EwGAwQ9Ov658l1TDUf4ImyhSdPFZD3mYKCzjhwED2ZlClG06icqgBotB4z7MO2a4OVaZzW0qvV5bQKyh1wcewEYkhY1EzjGg1nL3XDJYkg5CD5HOiYcXIR6veN4NNjAkIxxi1NwDs-0KXkMH7GHI4-w24CcEQbcWMMHBOdRAqRJFvRIiI8jQkMnizKN2M2cjKkUPRR1Y1wjtbfsONU2fDaP8roZdhXvINoT1QpOAAk7jm54DZN73K_w5Bve78FggjxuZPMYUWb5OEBJPhkoRUR4HJepyCjPSpbOQIknoJCgEBkjuVcUGfEizAOPpRH18hzHNKZJkMbps5mUAAc-fWnokTyVSYHzV5zQ7al7JvD4oJByc3XhIGWvqvaq5qtOQaWV-VrUkVBz_IeELqOOOCHo8kGo3Nd4-l8DX2DBOlAwWIFW_tbUHLCSMhcr74AN4s9hhaWMEaL24TYYtzdsZlL7hdmljkGDdtda2g-j3BdOfySQNRmmlkqNWo9xYe-PDn6kmoWJ-8RRtKq2Ap1uCqrqjOnoFGy84LoZ0z2dPnKshhnvHEUIGzbpEY29nmg5d1TMCRbdkzEhY-GoG5whO4JtkSlyMaan2BnlE3aGeQG7xQTOOSDPGo9C4sc4SJY4CoLEJywl1OURYHj0KroFNX43mWtXw8WV6J_J5gJD4EgACrWwSCscuuZtt-dgTcC9tOv5XI6uQW-PJT4cwb3U1DwaeEQ0okVURiyL0yiJk5k_dM58lJjmBFMv41nsRRHLvbQoC09EAVdvZuAAKJ97A4OJyjx9WiJ3EXhcN01xQl_BgjX3_PQkgL68evv2-vK1w5-Dqry3dV9lsMQHUawRCCdAoAR8dPKnACSKGTqHcVRyeg8DfrbtxvcwTdvv1ZWmkopDJMap-y5mNXtpXISR9ZixNOKyjseqRccAU64AsPNaJUaACDpBMr0gMa0pOU4BjjYX8xsUAwXTOJBDSdQWnbMwk1dZxEoLxBkvMqWHDXXAkU0QWHR4Svy6PkSXWI5yfvKEFsszY60-OM9U5sdCbGKTJo6BnH7UlGge2_XRrXmgcoyKZMa4jeUmf7c8LTo5xYE--g_Uml-SaaeoH2gMn15IA9XVI8G-fHMG8Rj8Eg_UhwF-wVlAz-LVHIyXJCrbgnG0wF-sMo5RyIjrxhZcG5aZGHWawIfdJYoleis-Db9vZAv9rdEl7I6m71fodyN3uw5Oa167eWHixIQCTAsHRQ_A5nUALjXvMDB-CQN_-T_JtmU7hx4AAA/).
@@ -26,47 +31,24 @@ $ npm i -D zipurl
 
 ## Usage
 
-### In the browser
-
-#### Via CDN
+### Browser via CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/zipurl@1"></script>
-<script>
-  console.log(zipurl('hello world!')) // H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA
-  console.log(unzipurl('H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA')) // hello world!
+<script type="module">
+  import { zipurl, unzipurl } from 'https://cdn.jsdelivr.net/npm/zipurl@2'
+
+  console.log(await zipurl('hello world!')) // H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA
+  console.log(await unzipurl('H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA')) // hello world!
 </script>
 ```
 
-The functions `zipurl()` and `unzipurl()` are available in the global (`window`) scope.
-
-#### Or locally
-
-```html
-<script src="path/to/dist/index.min.js"></script>
-```
-
-#### Or with a bundler
-
-```js
-import { zipurl, unzipurl } from 'zipurl'
-```
-
-### In Node.js
-
-#### ESM
+### With a bundler or in Node.js
 
 ```js
 import { zipurl, unzipurl } from 'zipurl'
 
-console.log(zipurl('hello world!')) // H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA
-console.log(unzipurl('H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA')) // hello world!
-```
-
-#### CJS
-
-```js
-const { zipurl, unzipurl } = require('zipurl')
+console.log(await zipurl('hello world!')) // H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA
+console.log(await unzipurl('H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA')) // hello world!
 ```
 
 ### Use the CLI
@@ -97,12 +79,21 @@ $ echo H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA | unzipurl
 hello world!
 ```
 
-## Encoding/decoding
+## API
+
+### zipurl(input: string): Promise<string>
+
+Compress a string using gzip and encode as URL-safe base64.
+
+### unzipurl(input: string): Promise<string>
+
+Decode base64url and decompress back into the original string.
+
+## Encoding/decoding examples
 
 ```js
-zipurl('hello world!') // H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA
-
-unzipurl('H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA') // hello world!
+const encoded = await zipurl('hello world!') // H4sIAAAAAAAAA8tIzcnJVyjPL8pJUQQAbcK0AwwAAAA
+const decoded = await unzipurl(encoded) // hello world!
 ```
 
 That's it!
@@ -115,9 +106,13 @@ const a = JSON.stringify({"students":[{"name":"Jack","age":17},{"name":"Jill","a
 
 console.log(a.length) // 103 bytes
 console.log(encodeURIComponent(a).length) // 199 bytes
-console.log(zipurl(a).length) // 116 bytes
+console.log((await zipurl(a)).length) // 116 bytes
+```
 
-// Let's try something bigger (3122 bytes)
+Let's try something bigger (3122 bytes):
+
+<!-- prettier-ignore -->
+```js
 const b = JSON.stringify({"shaderStatements":[{"output":"b","outputSwizzle":"zxyw","assignmentOperator":"-=",
 "functionName":"","parameter":"a","valueX":6.62,"valueY":6.165,"valueZ":-0.974,"valueW":-4.233,"parameterSwizzle":"xzyy"},
 {"output":"b","outputSwizzle":"ywxz","assignmentOperator":"-=","functionName":"","parameter":"a","valueX":-4.88,
@@ -149,7 +144,7 @@ const b = JSON.stringify({"shaderStatements":[{"output":"b","outputSwizzle":"zxy
 
 console.log(b.length) // 3122 bytes
 console.log(encodeURIComponent(b).length) // 4952 bytes
-console.log(zipurl(b).length) // 1120 bytes - 77.4% reduction in size :)
+console.log((await zipurl(b)).length) // 1120 bytes - 77.4% reduction in size :)
 ```
 
 ## Google Apps Script

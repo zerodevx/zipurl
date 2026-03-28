@@ -1,42 +1,32 @@
 {
   "name": "zipurl",
-  "version": "1.0.3",
-  "description": "Generate gzip web-safe strings on the browser",
+  "version": "2.0.0",
+  "description": "Generate gzipped url-safe strings on the browser or nodejs",
   "author": "Jason Lee <jason@zerodevx.com>",
   "scripts": {
-    "dev": "vite",
-    "package": "npm run lint && vite build && cp dist/index.umd.cjs dist/index.min.js && npx publint",
+    "build": "esbuild index.js --bundle --minify --outfile=dist/index.min.js",
+    "prepublishOnly": "npm run build && npx publint",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint",
-    "test": "npm run package && playwright test"
-  },
-  "dependencies": {
-    "js-base64": "^3.7.7",
-    "pako": "^2.1.0"
+    "test": "npm run lint && node --test"
   },
   "devDependencies": {
-    "@eslint/js": "^9.5.0",
-    "@playwright/test": "^1.50.1",
-    "eslint": "^9.19.0",
-    "eslint-config-prettier": "^10.0.1",
-    "globals": "^15.14.0",
-    "prettier": "^3.4.2",
-    "terser": "^5.37.0",
-    "vite": "^6.0.11"
+    "@eslint/js": "^10.0.1",
+    "esbuild": "^0.27.4",
+    "eslint": "^10.1.0",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1"
   },
   "type": "module",
-  "exports": {
-    "import": "./index.js",
-    "require": "./dist/index.umd.cjs"
-  },
+  "exports": "./index.js",
   "bin": {
-    "zipurl": "./bin/zipurl.js",
-    "unzipurl": "./bin/unzipurl.js"
+    "zipurl": "bin/zipurl.js",
+    "unzipurl": "bin/unzipurl.js"
   },
   "jsdelivr": "./dist/index.min.js",
   "files": [
-    "bin/",
-    "dist/",
+    "bin",
+    "dist",
     "index.js"
   ],
   "license": "ISC",
@@ -45,7 +35,6 @@
     "gzip",
     "base64",
     "url-safe",
-    "web-safe-strings",
-    "json-compress"
+    "json-compression"
   ]
 }
