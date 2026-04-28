@@ -4,16 +4,15 @@
 
 > Generate gzipped url-safe strings on the browser or nodejs
 
-Encode/decode long strings into compressed gzipped lossless url-safe representations. Very useful
-for sharing large datasets, like JSON, via URLs. [Code](https://cdn.jsdelivr.net/npm/zipurl@2) is
-only **≈1kB**. Featuring:
+Encode long strings into compressed lossless gzipped url-safe representations. Very useful for
+sharing large datasets, like JSON, via URLs. Featuring:
 
-- [x] Lightning-fast, feather-light, zero dependencies (unless needed)
+- [x] Lightning-fast, feather-light (≈1kB), zero dependencies
 - [x] Native-first, uses web standards for modern browsers
 - [x] Feature-detects, falling back to [pako](https://github.com/nodeca/pako) and
-      [js-base64](https://github.com/dankogai/js-base64) for older ones
+      [js-base64](https://github.com/dankogai/js-base64) for older envs
 - [x] Universal, works on both browser and nodejs
-- [x] Battle-tested in real world; test suite included.
+- [x] Battle-tested, test suite included
 
 ## Demo
 
