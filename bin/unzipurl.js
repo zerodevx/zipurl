@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { text } from 'node:stream/consumers'
-import { unzipurl } from '../index.js'
+import { unzipurl } from '../src/index.js'
 
 const { argv, stdin, exit } = process
 const input = argv.slice(2).join(' ') || (stdin.isTTY ? '' : (await text(process.stdin)).trim())

@@ -127,7 +127,7 @@ const server = http.createServer(async (req, res) => {
   }
 
   if (url.pathname === '/index.js') {
-    const code = await fs.readFile(new URL('../index.js', import.meta.url))
+    const code = await fs.readFile(new URL('../src/index.js', import.meta.url))
     res.setHeader('content-type', 'application/javascript')
     res.end(code)
     return

@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { zipurl, unzipurl } from '../index.js'
+import { zipurl, unzipurl } from '../src/index.js'
 
 console.log(`\nNode.js tests:\n`)
 
