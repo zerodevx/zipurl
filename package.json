@@ -1,12 +1,12 @@
 {
   "name": "zipurl",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Generate gzipped url-safe strings on the browser or nodejs",
   "author": "Jason Lee <jason@zerodevx.com>",
   "scripts": {
     "build": "npm run build:types && npm run build:dist",
     "build:dist": "esbuild src/index.js --bundle --minify --outfile=dist/index.min.js",
-    "build:types": "tsc src/index.js --allowJs --declaration --emitDeclarationOnly --outDir dist",
+    "build:types": "tsc src/index.js --allowJs -d --emitDeclarationOnly --outDir dist",
     "prepublishOnly": "npm run build && npx publint",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint",
@@ -14,10 +14,10 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "esbuild": "^0.28.1",
-    "eslint": "^10.8.0",
-    "globals": "^17.9.0",
-    "prettier": "^3.9.6",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
     "typescript": "^7.0.2"
   },
   "allowScripts": {
